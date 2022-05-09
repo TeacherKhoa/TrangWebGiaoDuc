@@ -27,7 +27,7 @@ body {
 /*#region*/
   .NavBar {
     width: 100%;
-    height: 250px;
+    height: 75px;
     z-index: 1;
     position: fixed;
     overflow: hidden;
@@ -231,6 +231,253 @@ body {
     }
 /*#endregion*/
 
+
+  /*Click NavBar*/
+/*#region*/
+
+/*Click UserButton*/
+#User_Option {
+  width: 240px;
+  height: 174px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  left: 1296px;
+  overflow: hidden;
+  display: none;
+}
+.v16_40 {
+  width: 111px;
+  height: 30px;
+  background: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 70px;
+  left: 26px;
+  overflow: hidden;
+}
+.v16_41 {
+  width: 57px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_42 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/CaiDat.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_43 {
+  width: 135px;
+  height: 30px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 126px;
+  left: 26px;
+  overflow: hidden;
+}
+.v16_44 {
+  width: 81px;
+  color: rgba(254,69,58,1);
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_45 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/Dangxuat.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_46 {
+  width: 132px;
+  height: 30px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 26px;
+  overflow: hidden;
+}
+.v16_47 {
+  width: 78px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 5px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_48 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/Profile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Noti*/
+#Notification_NoiDung {
+  width: 410px;
+  height: 174px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  left: 886px;
+  overflow: hidden;
+  display: none;
+}
+.v16_50 {
+  width: 410px;
+  height: 58px;
+  background: rgba(245,247,248,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_51 {
+  width: 314px;
+  color: url("../images/v16_51.png");
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_52 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/checked.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  overflow: hidden;
+}
+.v16_53 {
+  width: 409px;
+  height: 58px;
+  background: url("../images/v16_53.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 58px;
+  left: 1px;
+  overflow: hidden;
+}
+.v16_54 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/warning.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  overflow: hidden;
+}
+.v16_55 {
+  width: 320px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 69px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_56 {
+  width: 410px;
+  height: 58px;
+  background: rgba(245,247,248,1);
+  opacity: 1;
+  position: absolute;
+  top: 116px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_57 {
+  width: 319px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_58 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/NewCourse.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  overflow: hidden;
+}
+/*#endregion*/
+
+
 /*Bảng thông báo màu hồng*/
   .WelcomeNoti {
     width: 100%;
@@ -384,249 +631,6 @@ body {
     opacity: 1;
     text-align: left;
   }
-
-  /*Click NavBar*/
-/*#region*/
-
-/*Click UserButton*/
-  #User_Option {
-    width: 240px;
-    height: 174px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 75px;
-    left: 1296px;
-    overflow: hidden;
-    display: none;
-  }
-  .v16_40 {
-    width: 111px;
-    height: 30px;
-    background: #ffffff;
-    opacity: 1;
-    position: absolute;
-    top: 70px;
-    left: 26px;
-    overflow: hidden;
-  }
-  .v16_41 {
-    width: 57px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 6px;
-    left: 54px;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v16_42 {
-    width: 30px;
-    height: 30px;
-    background: url("./images/CaiDat.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v16_43 {
-    width: 135px;
-    height: 30px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 126px;
-    left: 26px;
-    overflow: hidden;
-  }
-  .v16_44 {
-    width: 81px;
-    color: rgba(254,69,58,1);
-    position: absolute;
-    top: 6px;
-    left: 54px;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v16_45 {
-    width: 30px;
-    height: 30px;
-    background: url("./images/Dangxuat.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v16_46 {
-    width: 132px;
-    height: 30px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 14px;
-    left: 26px;
-    overflow: hidden;
-  }
-  .v16_47 {
-    width: 78px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 5px;
-    left: 54px;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v16_48 {
-    width: 30px;
-    height: 30px;
-    background: url("./images/Profile.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-
-/*Noti*/
-  #Notification_NoiDung {
-    width: 410px;
-    height: 174px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 75px;
-    left: 886px;
-    overflow: hidden;
-    display: none;
-  }
-  .v16_50 {
-    width: 410px;
-    height: 58px;
-    background: rgba(245,247,248,1);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v16_51 {
-    width: 314px;
-    color: url("../images/v16_51.png");
-    position: absolute;
-    top: 10px;
-    left: 70px;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v16_52 {
-    width: 30px;
-    height: 30px;
-    background: url("./images/checked.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    overflow: hidden;
-  }
-  .v16_53 {
-    width: 409px;
-    height: 58px;
-    background: url("../images/v16_53.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 58px;
-    left: 1px;
-    overflow: hidden;
-  }
-  .v16_54 {
-    width: 30px;
-    height: 30px;
-    background: url("./images/warning.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    left: 19px;
-    overflow: hidden;
-  }
-  .v16_55 {
-    width: 320px;
-    color: #000;
-    position: absolute;
-    top: 10px;
-    left: 69px;
-    font-family: Inter;
-    font-weight: 500;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v16_56 {
-    width: 410px;
-    height: 58px;
-    background: rgba(245,247,248,1);
-    opacity: 1;
-    position: absolute;
-    top: 116px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v16_57 {
-    width: 319px;
-    color: #000;
-    position: absolute;
-    top: 10px;
-    left: 70px;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v16_58 {
-    width: 30px;
-    height: 30px;
-    background: url("./images/NewCourse.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    overflow: hidden;
-  }
-/*#endregion*/
 
 /*Banner Lớn Phòng Lab*/
 .Lab_Banner {
