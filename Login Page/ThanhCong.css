@@ -1,0 +1,68 @@
+* {
+box-sizing: border-box;
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+margin: 0px;
+padding: 0px;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+font-size: 14px;
+}
+*::-webkit-scrollbar {
+display: none;
+}
+
+.Page {
+width: 100%;
+height: 714px;
+background: rgba(255,255,255,1);
+opacity: 1;
+position: absolute;
+top: 0px;
+left: 0px;
+overflow: hidden;
+}
+.Text1 {
+width: 492px;
+color: rgba(0,0,0,1);
+position: absolute;
+top: 219px;
+left: 522px;
+font-family: Inter;
+font-weight: 600;
+font-size: 32px;
+opacity: 1;
+text-align: left;
+}
+.Text2 {
+width: 534px;
+color: rgba(0,0,0,1);
+position: absolute;
+top: 283px;
+left: 501px;
+font-family: Inter;
+font-weight: 600;
+font-size: 32px;
+opacity: 1;
+text-align: left;
+}
+.SignIn_Button {
+width: 243px;
+height: 65px;
+background: rgba(244,92,44,1);
+opacity: 1;
+position: absolute;
+top: 382px;
+left: 647px;
+border-radius: 12px;
+overflow: hidden;
+color: rgba(255,255,255,1);
+font-family: Inter;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+}
