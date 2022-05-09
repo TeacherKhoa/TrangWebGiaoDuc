@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./Dashboard DangHoc Normal.css">
+</head>
+
+<body>
+    <div class="Page">
+        <div class="NavBar">
+            <div class="NavBarBackground"></div>
+            <div class="UserInfo">
+                <div class="Avatar"></div>
+                <span class="Username">Username</span>
+                <div class="UserButton" onclick="OpenUserOption()"></div>
+            </div>
+            <div class="Search">
+                <div class="SearchBar"></div>
+                <div class="SearchButton">
+                    <div class="SearchIcon"></div>
+                </div>
+            </div>
+            <div class="ButtonKhoaHoc">
+                <span class="ButtonKhoaHocName">Khóa học</span>
+                <div class="ButtonKhoaHocIcon"></div>
+            </div>
+            <div class="ButtonPhongLab">
+                <span class="ButtonPhongLabName">Phòng Lab</span>
+            </div>
+            <span class="Logo">physical</span>
+            <div class="Notification" onclick="OpenNotification()"></div>
+            <!-- Khi click UserButton -->
+            <div id="User_Option">
+                <div class="v16_40">
+                    <span class="v16_41">Cài Đặt</span>
+                    <div class="v16_42"></div>
+                </div>
+                <div class="v16_43">
+                    <span class="v16_44">Đăng Xuất</span>
+                    <div class="v16_45"></div>
+                </div>
+                <div class="v16_46">
+                    <span class="v16_47">My Profile</span>
+                    <div class="v16_48"></div>
+                </div>
+            </div>
+            <!-- Khi click Notification -->
+            <div id="Notification_NoiDung">
+                <div class="v16_50"></div>
+                <div class="v16_53"></div>
+                <div class="v16_56"></div>
+            </div>
+        </div>
+        <div class="WelcomeNoti">
+            <span class="ThongBao">Chào mừng bạn trở lại</span>
+        </div>
+        <div class="StatusBar">
+            <div class="Status1">Nổi Bật</div>
+            <div class="Status2">Đang Học
+                <div class="StatusIndicator"></div>
+            </div>
+            <div class="Status3">Đã Hoàn Thành</div>
+        </div>
+        <div class="Content">
+            <!--Bài Học Đang Học-->
+            <div class="BaiHoc1">
+                <div class="BaiHocInfo">
+                    <div class="ProgressBar">
+                        <span class="ProgressText">Tiến độ khóa học</span>
+                        <span class="Percentage">40%</span>
+                        <div class="ProgressHolder"></div>
+                        <div class="Progress"></div>
+                    </div>
+                    <span class="CourseName">Lực tương tác của điện tích</span>
+                    <div class="CourseAuthor">
+                        <span class="CourseType">Bài Học</span>
+                        <span class="CourseTeacher">GV. Nguyễn Ngọc Đăng Khoa</span>
+                        <div class="Stripe"></div>
+                    </div>
+                    <div class="CoursePhoto"></div>
+                </div>
+                <div class="CourseStripe"></div>
+                <div class="CourseNext">
+                    <span class="NextText">Kế Tiếp</span>
+                    <span class="NextTitle">Bài giảng 05: Định Luật Coulomb</span>
+                    <div class="LectureIcon"></div>
+                    <div class="NextItemInfo">
+                        <span class="NextLocation">Tuần 2</span>
+                        <span class="ItemTime">Giáo trình: 10 phút</span>
+                        <div class="Stripe"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="BaiHoc2">
+                <div class="BaiHocInfo">
+                    <div class="ProgressBar">
+                        <span class="ProgressText">Tiến độ khóa học</span>
+                        <span class="Percentage">40%</span>
+                        <div class="ProgressHolder"></div>
+                        <div class="Progress"></div>
+                    </div>
+                    <span class="CourseName">Lực tương tác của điện tích</span>
+                    <div class="CourseAuthor">
+                        <span class="CourseType">Bài Học</span>
+                        <span class="CourseTeacher">GV. Nguyễn Ngọc Đăng Khoa</span>
+                        <div class="Stripe"></div>
+                    </div>
+                    <div class="CoursePhoto"></div>
+                </div>
+                <div class="CourseStripe"></div>
+                <div class="CourseNext">
+                    <span class="NextText">Kế Tiếp</span>
+                    <span class="NextTitle">Bài giảng 05: Định Luật Coulomb</span>
+                    <div class="LectureIcon"></div>
+                    <div class="NextItemInfo">
+                        <span class="NextLocation">Tuần 2</span>
+                        <span class="ItemTime">Giáo trình: 10 phút</span>
+                        <div class="Stripe"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="BaiHoc3">
+                <div class="BaiHocInfo">
+                    <div class="ProgressBar">
+                        <span class="ProgressText">Tiến độ khóa học</span>
+                        <span class="Percentage">40%</span>
+                        <div class="ProgressHolder"></div>
+                        <div class="Progress"></div>
+                    </div>
+                    <span class="CourseName">Lực tương tác của điện tích</span>
+                    <div class="CourseAuthor">
+                        <span class="CourseType">Bài Học</span>
+                        <span class="CourseTeacher">GV. Nguyễn Ngọc Đăng Khoa</span>
+                        <div class="Stripe"></div>
+                    </div>
+                    <div class="CoursePhoto"></div>
+                </div>
+                <div class="CourseStripe"></div>
+                <div class="CourseNext">
+                    <span class="NextText">Kế Tiếp</span>
+                    <span class="NextTitle">Bài giảng 05: Định Luật Coulomb</span>
+                    <div class="LectureIcon"></div>
+                    <div class="NextItemInfo">
+                        <span class="NextLocation">Tuần 2</span>
+                        <span class="ItemTime">Giáo trình: 10 phút</span>
+                        <div class="Stripe"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tiêu Đề-->
+            <span class="Suggest3_Title">Cập Nhật Về Thành Quả Học Tập</span>
+            
+            <!--Banner Lớn Phòng Lab-->
+            <div class="Lab_Banner">
+                <div class="Lab_Banner_Button">Visit Your Lab</div>
+                <div class="Lab_Banner_Photo"></div>
+            </div> 
+        </div>
+    </div>
+</body>
+
+<script>
+    function OpenUserOption() {
+        var x = document.getElementById("User_Option");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    function OpenNotification() {
+        var x = document.getElementById("Notification_NoiDung");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>

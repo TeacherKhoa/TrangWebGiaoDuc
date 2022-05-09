@@ -1,0 +1,673 @@
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+font-size: 14px;
+}
+.Page {
+width: 100%;
+height: 1470px;
+background: rgba(255,255,255,1);
+opacity: 1;
+position: absolute;
+top: 0px;
+left: 0px;
+overflow: hidden;
+}
+*::-webkit-scrollbar {
+display: none;
+}
+
+/*Thanh Navigation fixed trên top*/
+/*#region*/
+.NavBar {
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  position: fixed;
+  overflow: hidden;
+}
+  .NavBarBackground {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid #c4c4c4;
+  }
+  .UserInfo {
+    width: 240px;
+    height: 75px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 1296px;
+    overflow: hidden;
+    border-left: 2px solid #c4c4c4;
+    border-bottom: 2px solid #c4c4c4;
+  }
+    .Avatar {
+      width: 50px;
+      height: 50px;
+      background: url(./images/avatar.svg);
+      opacity: 1;
+      position: absolute;
+      top: 13px;
+      left: 15px;
+      overflow: hidden;
+    }
+    .Username {
+      width: 79px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 28px;
+      left: 80px;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .UserButton {
+      width: 12px;
+      height: 12px;
+      background: url("./images/UserButton.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 32px;
+      left: 193px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+  .Search {
+    width: 643px;
+    height: 43px;
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 391px;
+    overflow: hidden;
+  }
+    .SearchBar {
+      width: 600px;
+      height: 43px;
+      background: rgba(255,255,255,1);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border: 2px solid rgba(196,196,196,1);
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      overflow: hidden;
+    }
+    .SearchButton {
+      width: 43px;
+      height: 43px;
+      background: rgba(244,92,44,1);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 600px;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      overflow: hidden;
+    }
+    .SearchIcon {
+      width: 20px;
+      height: 20px;
+      background: url("./images/SearchIcon.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      overflow: hidden;
+    }
+
+  .ButtonKhoaHoc {
+    width: 126px;
+    height: 43px;
+    background: rgba(244,92,44,1);
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 216px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+  }
+    .ButtonKhoaHocName {
+      width: 74px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .ButtonKhoaHocIcon {
+      width: 12px;
+      height: 12px;
+      background: url("./images/ButtonKhoaHoc.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      position: absolute;
+      top: 16px;
+      left: 97px;
+      overflow: hidden;
+    }
+  .ButtonPhongLab {
+    width: 126px;
+    height: 43px;
+    background: #ffd073;
+    opacity: 1;
+    position: absolute;
+    top: 16px;
+    left: 1077px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+  }
+    .ButtonPhongLabName {
+      width: 84px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 12px;
+      left: 21px;
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+  .Logo {
+    width: 136px;
+    color: rgba(244,92,44,1);
+    position: absolute;
+    top: 16px;
+    left: 40px;
+    font-family: Avenir LT Std;
+    font-weight: 750;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  .Notification {
+    width: 35px;
+    height: 35px;
+    background: url("./images/notification-blank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 1246px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+/*#endregion*/
+
+/*Bảng thông báo màu hồng*/
+.WelcomeNoti {
+  width: 100%;
+  height: 200px;
+  background: rgba(244,91,43,0.3499999940395355);
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  overflow: hidden;
+}
+.ThongBao {
+  width: 450px;
+  color: rgba(213,67,20,1);
+  position: absolute;
+  top: 117px;
+  left: 216px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+/*Thanh trạng thái chọn khóa học*/
+.StatusBar {
+  width: 100%;
+  height: 63px;
+  background: #ffffff;
+  position: absolute;
+  top: 275px;
+  left: 0px;
+  overflow: hidden;
+}
+.Status1 {
+  width: 200px;
+  height: 63px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  line-height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 222px;
+  overflow: hidden;
+}
+.Status2 {
+  width: 200px;
+  height: 63px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  line-height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 492px;
+  overflow: hidden;
+}
+.Status3 {
+  width: 200px;
+  height: 63px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  line-height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 762px;
+  overflow: hidden;
+}
+/*Chọn status nào thì Indicator nằm ở status đó*/
+.StatusIndicator {
+  width: 200px;
+  height: 6px;
+  background: rgba(244,92,44,1);
+  opacity: 1;
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Nội Dung Chính*/
+.Content {
+  width: 100%;
+  height: 1132px;
+  background: rgba(245,247,248,1);
+  opacity: 1;
+  position: absolute;
+  top: 338px;
+  left: 0px;
+  overflow: hidden;
+}
+/*Thông Báo Trống*/
+.Content_ThongBao {
+  width: 1115px;
+  height: 331px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 124px;
+  left: 211px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
+  overflow: hidden;
+}
+  .Content_ThongBao_Text {
+    width: 800px;
+    height: 39px;
+    position: absolute;
+    top: 147px;
+    left: 267px;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #f45c2c ;
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+    line-height: 39px;
+  }
+  .Content_ThongBao_Photo {
+    width: 190px;
+    height: 190px;
+    background: url("./images/search.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 72px;
+    left: 45px;
+    overflow: hidden;
+  }
+/*Tiêu Đề*/
+.Suggest3_Title {
+  width: 600px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 573px;
+  left: 224px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+/*Click NavBar*/
+/*#region*/
+
+/*Click UserButton*/
+#User_Option {
+  width: 240px;
+  height: 174px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 1296px;
+  overflow: hidden;
+  display: none;
+}
+.v16_40 {
+  width: 111px;
+  height: 30px;
+  background: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 70px;
+  left: 26px;
+  overflow: hidden;
+}
+.v16_41 {
+  width: 57px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_42 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/CaiDat.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_43 {
+  width: 135px;
+  height: 30px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 126px;
+  left: 26px;
+  overflow: hidden;
+}
+.v16_44 {
+  width: 81px;
+  color: rgba(254,69,58,1);
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_45 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/Dangxuat.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_46 {
+  width: 132px;
+  height: 30px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 26px;
+  overflow: hidden;
+}
+.v16_47 {
+  width: 78px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 5px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_48 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/Profile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Noti*/
+#Notification_NoiDung {
+  width: 410px;
+  height: 174px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 886px;
+  overflow: hidden;
+  display: none;
+}
+.v16_50 {
+  width: 410px;
+  height: 58px;
+  background: rgba(245,247,248,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_51 {
+  width: 314px;
+  color: url("../images/v16_51.png");
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_52 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/checked.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  overflow: hidden;
+}
+.v16_53 {
+  width: 409px;
+  height: 58px;
+  background: url("../images/v16_53.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 58px;
+  left: 1px;
+  overflow: hidden;
+}
+.v16_54 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/warning.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  overflow: hidden;
+}
+.v16_55 {
+  width: 320px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 69px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_56 {
+  width: 410px;
+  height: 58px;
+  background: rgba(245,247,248,1);
+  opacity: 1;
+  position: absolute;
+  top: 116px;
+  left: 0px;
+  overflow: hidden;
+}
+.v16_57 {
+  width: 319px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v16_58 {
+  width: 30px;
+  height: 30px;
+  background: url("./images/NewCourse.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  overflow: hidden;
+}
+/*#endregion*/
+
+/*Banner Lớn Phòng Lab*/
+.Lab_Banner {
+width: 1115px;
+height: 331px;
+background: rgba(255,255,255,1);
+opacity: 1;
+position: absolute;
+top: 730px;
+left: 211px;
+border-radius: 12px;
+box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
+overflow: hidden;
+}
+.Lab_Banner_Button {
+  width: 287px;
+  height: 76px;
+  background: rgba(245,108,25,1);
+  opacity: 1;
+  position: absolute;
+  top: 128px;
+  left: 606px;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #ffffff ;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  line-height: 76px;
+}
+.Lab_Banner_Photo {
+  width: 350px;
+  height: 300px;
+  background: url("./images/LabVector.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  left: 178px;
+  overflow: hidden;
+}

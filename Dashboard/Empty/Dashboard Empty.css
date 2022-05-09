@@ -11,7 +11,7 @@ body {
 }
 .Page {
   width: 100%;
-  height: 2705px;
+  height: 2253px;
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
@@ -24,6 +24,7 @@ body {
 }
 
 /*Thanh Navigation fixed trên top*/
+/*#region*/
   .NavBar {
     width: 100%;
     height: 250px;
@@ -228,6 +229,7 @@ body {
       overflow: hidden;
       cursor: pointer;
     }
+/*#endregion*/
 
 /*Bảng thông báo màu hồng*/
   .WelcomeNoti {
@@ -319,7 +321,7 @@ body {
 /*Nội Dung Chính*/
 .Content {
     width: 100%;
-    height: 2367px;
+    height: 1915px;
     background: rgba(245,247,248,1);
     opacity: 1;
     position: absolute;
@@ -327,261 +329,12 @@ body {
     left: 0px;
     overflow: hidden;
 }
-  /*Bài Học Nổi Bật, Chỉ hiện 1 trong tất cả khóa học*/
-  .BaiHoc {
-      width: 1115px;
-      height: 200px;
-      background: rgba(255,255,255,1);
-      opacity: 1;
-      position: absolute;
-      top: 117px;
-      left: 211px;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
-  }
-    .BaiHocInfo {
-      width: 725px;
-      height: 150px;
-      background: rgba(255,255,255,1);
-      opacity: 1;
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      overflow: hidden;
-    }
-
-      .ProgressBar {
-        width: 550px;
-        height: 49px;
-        background: rgba(255,255,255,1);
-        opacity: 1;
-        position: absolute;
-        top: 101px;
-        left: 175px;
-        overflow: hidden;
-      }
-        .ProgressText {
-          width: 133px;
-          color: rgba(151,151,151,1);
-          position: absolute;
-          top: 30px;
-          left: 0px;
-          font-family: Inter;
-          font-weight: 600;
-          font-size: 16px;
-          opacity: 1;
-          text-align: left;
-        }
-        .Percentage {
-          width: 36px;
-          color: rgba(0,0,0,1);
-          position: absolute;
-          top: 0px;
-          left: 514px;
-          font-family: Inter;
-          font-weight: Bold;
-          font-size: 16px;
-          opacity: 1;
-          text-align: left;
-        }
-        .ProgressHolder {
-          width: 500px;
-          height: 10px;
-          background: rgba(229,229,229,1);
-          opacity: 1;
-          position: absolute;
-          top: 5px;
-          left: 0px;
-          border-top-left-radius: 25px;
-          border-top-right-radius: 25px;
-          border-bottom-left-radius: 25px;
-          border-bottom-right-radius: 25px;
-          overflow: hidden;
-        }
-        .Progress {
-          width: 200px;
-          height: 10px;
-          background: rgba(90,156,125,1);
-          opacity: 1;
-          position: absolute;
-          top: 5px;
-          left: 0px;
-          border-top-left-radius: 25px;
-          border-top-right-radius: 25px;
-          border-bottom-left-radius: 25px;
-          border-bottom-right-radius: 25px;
-          overflow: hidden;
-        }
-
-      .CourseName {
-        width: 434px;
-        color: rgba(244,92,44,1);
-        position: absolute;
-        top: 30px;
-        left: 175px;
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 32px;
-        opacity: 1;
-        text-align: left;
-      }
-      .CourseAuthor {
-        width: 298px;
-        height: 20px;
-        background: rgba(255,255,255,1);
-        opacity: 1;
-        position: absolute;
-        top: 0px;
-        left: 175px;
-        overflow: hidden;
-      }
-      .CourseType {
-        width: 59px;
-        color: rgba(151,151,151,1);
-        position: absolute;
-        top: 1px;
-        left: 0px;
-        font-family: Inter;
-        font-weight: 600;
-        font-size: 16px;
-        opacity: 1;
-        text-align: center;
-      }
-      .CourseTeacher {
-        width: 223px;
-        color: rgba(151,151,151,1);
-        position: absolute;
-        top: 1px;
-        left: 75px;
-        font-family: Inter;
-        font-weight: 600;
-        font-size: 16px;
-        opacity: 1;
-        text-align: left;
-      }
-      .Stripe {
-        height: 20px;
-        width: 2px;
-        background: #979797;
-        position: absolute;
-        top: 1px;
-        left: 67px;
-      }
-
-    .CoursePhoto {
-      width: 150px;
-      height: 150px;
-      background: url("./images/CoursePhoto.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      opacity: 1;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      overflow: hidden;
-    }
-    .CourseStripe {
-      height: 150px;
-      width: 3px;
-      background: #e5e5e5;
-      position: absolute;
-      top: 25px;
-      left: 772px;
-    }
-
-    .CourseNext {
-      width: 294px;
-      height: 95px;
-      background: rgba(255,255,255,1);
-      opacity: 1;
-      position: absolute;
-      top: 26px;
-      left: 792px;
-      overflow: hidden;
-    }
-      .NextText {
-        width: 70px;
-        color: rgba(0,0,0,1);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        font-family: Inter;
-        font-weight: Bold;
-        font-size: 16px;
-        opacity: 1;
-        text-align: left;
-      }
-      .NextTitle {
-        width: 254px;
-        color: rgba(244,92,44,1);
-        position: absolute;
-        top: 39px;
-        left: 40px;
-        font-family: Inter;
-        font-weight: Bold;
-        font-size: 16px;
-        opacity: 1;
-        text-align: left;
-      }
-      .LectureIcon {
-        width: 30px;
-        height: 30px;
-        background: url("./images/LectureIcon.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 34px;
-        left: 0px;
-        overflow: hidden;
-      }
-      .NextItemInfo {
-        width: 235px;
-        height: 20px;
-        background: rgba(255,255,255,1);
-        opacity: 1;
-        position: absolute;
-        top: 75px;
-        left: 40px;
-        overflow: hidden;
-      }
-      .NextLocation {
-        width: 52px;
-        color: rgba(151,151,151,1);
-        position: absolute;
-        top: 1px;
-        left: 0px;
-        font-family: Inter;
-        font-weight: 600;
-        font-size: 16px;
-        opacity: 1;
-        text-align: left;
-      }
-      .ItemTime {
-        width: 143px;
-        color: rgba(151,151,151,1);
-        position: absolute;
-        top: 1px;
-        left: 75px;
-        font-family: Inter;
-        font-weight: 600;
-        font-size: 16px;
-        opacity: 1;
-        text-align: left;
-      }
 
   .Suggest1_Title {
     width: 528px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 389px;
+    top: 98px;
     left: 224px;
     font-family: Inter;
     font-weight: 800;
@@ -593,7 +346,7 @@ body {
     width: 600px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 1021px;
+    top: 730px;
     left: 224px;
     font-family: Inter;
     font-weight: 800;
@@ -605,7 +358,7 @@ body {
     width: 600px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 1653px;
+    top: 1362px;
     left: 224px;
     font-family: Inter;
     font-weight: 800;
@@ -613,6 +366,9 @@ body {
     opacity: 1;
     text-align: left;
   }
+
+/*Click NavBar*/
+/*#region*/
 
 /*Click UserButton*/
   #User_Option {
@@ -851,6 +607,7 @@ body {
     left: 20px;
     overflow: hidden;
   }
+/*#endregion*/
 
 /*Các Khóa Học Đề Xuất*/
 .Item1 {
@@ -859,7 +616,7 @@ body {
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
-  top: 493px;
+  top: 202px;
   left: 211px;
   border-radius: 12px;
   box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
@@ -1142,7 +899,7 @@ body {
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
-  top: 493px;
+  top: 202px;
   left: 600px;
   border-radius: 12px;
   box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
@@ -1184,7 +941,7 @@ body {
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
-  top: 493px;
+  top: 202px;
   left: 989px;
   border-radius: 12px;
   box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
@@ -1268,6 +1025,42 @@ body {
     overflow: hidden;
   }
 
+.Item4 {
+  width: 337px;
+  height: 456px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 834px;
+  left: 211px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
+  overflow: hidden;
+}
+.Item5 {
+  width: 337px;
+  height: 456px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 834px;
+  left: 600px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
+  overflow: hidden;
+}
+.Item6 {
+  width: 337px;
+  height: 456px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 834px;
+  left: 989px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
+  overflow: hidden;
+}
 /*Banner Lớn Phòng Lab*/
 .Lab_Banner {
   width: 1115px;
@@ -1275,7 +1068,7 @@ body {
   background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
-  top: 1775px;
+  top: 1473px;
   left: 211px;
   border-radius: 12px;
   box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.10000000149011612);
