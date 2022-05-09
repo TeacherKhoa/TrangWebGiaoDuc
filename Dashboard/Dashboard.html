@@ -15,10 +15,11 @@
 <body>
     <div class="Page">
         <div class="NavBar">
+            <div class="NavBarBackground"></div>
             <div class="UserInfo">
                 <div class="Avatar"></div>
                 <span class="Username">Username</span>
-                <div class="UserButton"></div>
+                <div class="UserButton" onclick="OpenUserOption()"></div>
             </div>
             <div class="Search">
                 <div class="SearchBar"></div>
@@ -34,7 +35,37 @@
                 <span class="ButtonPhongLabName">Phòng Lab</span>
             </div>
             <span class="Logo">physical</span>
-            <div class="Notification"></div>
+            <div class="Notification" onclick="OpenNotification()"></div>
+            <!-- Khi click UserButton -->
+            <div id="User_Option">
+                <div class="v16_40">
+                    <span class="v16_41">Cài Đặt</span>
+                    <div class="v16_42"></div>
+                </div>
+                <div class="v16_43">
+                    <span class="v16_44">Đăng Xuất</span>
+                    <div class="v16_45"></div>
+                </div>
+                <div class="v16_46">
+                    <span class="v16_47">My Profile</span>
+                    <div class="v16_48"></div>
+                </div>
+            </div>
+            <!-- Khi click Notification -->
+            <div id="Notification_NoiDung">
+                <div class="v16_50">
+                    <span class="v16_51">Bạn đã hoàn thành: Bài 1: Điện Tích Điểm Khóa học Lực tương tác của điện tích </span>
+                    <div class="v16_52"></div>
+                </div>
+                <div class="v16_53">
+                    <div class="v16_54"></div>
+                    <span class="v16_55">Bạn có một bài tập đến hạn: Luyện Tập 01</span>
+                </div>
+                <div class="v16_56">
+                    <span class="v16_57">Bạn đã tham gia khóa học: Lực tương tác của điện tích điểm</span>
+                    <div class="v16_58"></div>
+                </div>
+            </div>
         </div>
         <div class="WelcomeNoti">
             <span class="ThongBao">Chào mừng bạn trở lại</span>
@@ -47,6 +78,7 @@
             <div class="Status3">Đã Hoàn Thành</div>
         </div>
         <div class="Content">
+            <!--Bài Học Nổi Bật-->
             <div class="BaiHoc">
                 <div class="BaiHocInfo">
                     <div class="ProgressBar">
@@ -75,45 +107,130 @@
                     </div>
                 </div>
             </div>
+            <!--Tiêu Đề-->
             <span class="Suggest1_Title">Nâng Cao Kiến Thức Điện Trường</span>
             <span class="Suggest2_Title">Tiếp Tục Luyện Tập Để Hoàn Thiện</span>
             <span class="Suggest3_Title">Cập Nhật Về Thành Quả Học Tập</span>
-            <div class="Suggest1_2">
-                <span class="SuggestItem_Title">Điện thế và thế năng điện</span>
-                <span class="SuggestItem_Price">Free</span>
-                <span class="SuggestItem_Type">Bài Học</span>
-                <div class="SuggestItem_Photo"></div>
+            <!--Các Khóa Học Đề Xuất-->
+            <div class="Item1">
+                <div class="Item1_Photo"></div>
+                <div class="Item_Header">
+                    <div class="Item_Type_BaiHoc">BÀI HỌC</div>
+                    <div class="Item_Label_Best">BESTSELLER</div>
+                    <div class="Item_Review">
+                        <div class="Item_Participant">215
+                            <div class="Item_Participant_Icon"></div>
+                        </div>
+                        <div class="Item_Star">4.8
+                            <div class="Item_Star_Icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item_Button">Nội Dung
+                    <div class="Item_Button_Icon"></div>
+                </div>
+                <div class="Item_Info">
+                    <span class="Item_Name">Điện thế và thế năng điện</span>
+                    <span class="Item_Price">19.000 đ</span>
+                    <div class="Item_Author">
+                        <div class="Photo_Holder"></div>
+                        <span class="Author_Name">Nguyễn Ngọc Đăng Khoa</span>
+                        <div class="Item1_AuthorPhoto"></div>
+                    </div>
+                    <div class="Item_Summary">
+                        <span class="Item_SummaryAmount">20 Bài giảng</span>
+                        <div class="Item_Summary_BaiHoc"></div>
+                    </div>
+                </div>
             </div>
-            <div class="v36_855">
-                <div class="v36_856"></div><span class="v36_857">Điện thế và thế năng điện</span><span
-                    class="v36_858">Free</span><span class="v36_859">Bài Học</span>
-                <div class="v36_860"></div>
+            <div class="Item2">
+                <div class="Item2_Photo"></div>
+                <div class="Item_Header">
+                    <div class="Item_Type_BaiHoc">BÀI HỌC</div>
+                    <div class="Item_Review">
+                        <div class="Item_Participant">280
+                            <div class="Item_Participant_Icon"></div>
+                        </div>
+                        <div class="Item_Star">4.9
+                            <div class="Item_Star_Icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item_Button">Nội Dung
+                    <div class="Item_Button_Icon"></div>
+                </div>
+                <div class="Item_Info">
+                    <span class="Item_Name">Trường tĩnh điện</span>
+                    <span class="Item_Price">15.000 đ</span>
+                    <div class="Item_Author">
+                        <div class="Photo_Holder"></div>
+                        <span class="Author_Name">Nguyễn Ngọc Đăng Khoa</span>
+                        <div class="Item2_AuthorPhoto"></div>
+                    </div>
+                    <div class="Item_Summary">
+                        <span class="Item_SummaryAmount">16 Bài giảng</span>
+                        <div class="Item_Summary_BaiHoc"></div>
+                    </div>
+                </div>
             </div>
-            <div class="v36_848">
-                <div class="v36_849"></div><span class="v36_850">Điện thế và thế năng điện</span><span
-                    class="v36_851">Free</span><span class="v36_852">Bài Học</span>
-                <div class="v36_853"></div>
+            <div class="Item3">
+                <div class="Item3_Photo"></div>
+                <div class="Item_Header">
+                    <div class="Item_Type_LuyenTap">LUYỆN TẬP</div>
+                    <div class="Item_Label_Starter">STARTER</div>
+                    <div class="Item_Review">
+                        <div class="Item_Participant">571
+                            <div class="Item_Participant_Icon"></div>
+                        </div>
+                        <div class="Item_Star">4.8
+                            <div class="Item_Star_Icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item_Button">Nội Dung
+                    <div class="Item_Button_Icon"></div>
+                </div>
+                <div class="Item_Info">
+                    <span class="Item_Name">Dòng điện không đổi</span>
+                    <span class="Item_Price">Free</span>
+                    <div class="Item_Author">
+                        <div class="Photo_Holder"></div>
+                        <span class="Author_Name">Nguyễn Ngọc Đăng Khoa</span>
+                        <div class="Item3_AuthorPhoto"></div>
+                    </div>
+                    <div class="Item_Summary">
+                        <span class="Item_SummaryAmount">12 Thí nghiệm</span>
+                        <div class="Item_Summary_LuyenTap"></div>
+                    </div>
+                </div>
             </div>
-            <div class="v36_861">
-                <div class="v36_862"></div><span class="v36_863">Điện thế và thế năng điện</span><span
-                    class="v36_864">Free</span><span class="v36_865">Bài Học</span>
-                <div class="v36_866"></div>
-            </div>
-            <div class="v36_842">
-                <div class="v36_843"></div><span class="v36_844">Điện thế và thế năng điện</span><span
-                    class="v36_845">Free</span><span class="v36_846">Bài Học</span>
-                <div class="v36_847"></div>
-            </div>
-            <div class="v36_867">
-                <div class="v36_868"></div><span class="v36_869">Điện thế và thế năng điện</span><span
-                    class="v36_870">Free</span><span class="v36_871">Bài Học</span>
-                <div class="v36_872"></div>
-            </div>
-            <div class="Suggest_VisitLab">
-                <span class="v36_876">Visit Your Lab</span>
-            </div>
+            <!--Banner Lớn Phòng Lab-->
+            <div class="Lab_Banner">
+                <div class="Lab_Banner_Button">Visit Your Lab</div>
+                <div class="Lab_Banner_Photo"></div>
+            </div> 
         </div>
     </div>
 </body>
+
+<script>
+    function OpenUserOption() {
+        var x = document.getElementById("User_Option");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    function OpenNotification() {
+        var x = document.getElementById("Notification_NoiDung");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>

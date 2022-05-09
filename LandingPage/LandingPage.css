@@ -17,6 +17,7 @@ html {
     left: 0px;
     overflow: hidden;
   }
+
   .Menu_header {
     width: 74.5%;
     height: 52px;
@@ -108,7 +109,8 @@ html {
     opacity: 1;
     text-align: left;
   }
-  .v2_15 {
+
+  .Left_Area {
     width: 511px;
     height: 427px;
     position: absolute;
@@ -205,45 +207,25 @@ html {
     opacity: 1;
     text-align: left;
   }
-  .v2_23 {
-    width: 615px;
-    height: 574px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
+  
+  .Right_Area {
+    width: 40%;
+    height: 80.4%;
     position: absolute;
-    top: 111px;
-    left: 821px;
+    top: 17.5%;
+    left: 53.5%;
     overflow: hidden;
   }
-  .v2_24 {
-    width: 482px;
-    height: 465px;
-    background: rgba(255,241,182,1);
-    opacity: 1;
-    position: absolute;
-    top: 111px;
-    left: 0px;
-  }
-  .v2_25 {
-    width: 422px;
-    height: 495px;
-    background: rgba(255,142,107,1);
-    opacity: 1;
-    position: absolute;
-    top: 591px;
-    left: 124px;
-    transform: rotate(-98deg);
-  }
-  .v2_26 {
-    width: 560px;
-    height: 531px;
-    background: url("../images/v2_26.png");
+  .Picture {
+    width: 100%;
+    height: 100%;
+    background: url("./images/Student.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 46px;
+    top: 0px;
     left: 0px;
     overflow: hidden;
   }
