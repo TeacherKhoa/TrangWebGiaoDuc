@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
@@ -31,7 +32,7 @@ class LoginController extends Controller
                     if($user->active === 0) {
                         return redirect()->route('update_user');
                     } else {
-//                        return redirect()->route('update_user');
+                        return redirect()->route('home');
                     }
                 } else {
                     return back()->with('errors', ['Password invalid.']);
@@ -86,5 +87,56 @@ class LoginController extends Controller
         } else {
             return back()->with('errors', $validator->errors()->toArray());
         }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return view('auth.login');
+    }
+
+    /**
+     * Redirect the user to the provider authentication page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function redirectToProvider($driver)
+    {
+        return Socialite::driver($driver)->redirect();
+    }
+
+    public function callbackGoogle(Request $request)
+    {
+        $googleUser = Socialite::driver('google')->user();
+        if ($googleUser) {
+            $user = User::where('username', $googleUser->getEmail())->first();
+            if (!$user) {
+                $user = User::create([
+                    'username' => $googleUser->getEmail(),
+                    'email' => $googleUser->getEmail(),
+                    'password' => Hash::make($this->randomPassword()),
+                    'active' => 0,
+                    'type' => 0,
+                    'avatar' => $googleUser->getAvatar(),
+                ]);
+            }
+            Auth::login($user);
+            if($user->active === 0) {
+                return redirect()->route('update_user');
+            } else {
+                return redirect()->route('home');
+            }
+        }
+    }
+
+    function randomPassword() {
+        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+        $pass = array(); //remember to declare $pass as an array
+        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+        for ($i = 0; $i < 8; $i++) {
+            $n = rand(0, $alphaLength);
+            $pass[] = $alphabet[$n];
+        }
+        return implode($pass); //turn the array into a string
     }
 }

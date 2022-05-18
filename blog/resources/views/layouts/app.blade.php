@@ -10,7 +10,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/toastr.min.js') }}" defer></script>
+{{--    <script src="{{ asset('js/toastr.min.js') }}" defer></script>--}}
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet">--}}
     @yield('link')
 </head>
 <body>
@@ -39,7 +39,7 @@
         // Your jquery code
         var stringMess = $("#messError").html();
         if (stringMess) {
-            var ErrorMess = JSON.parse(stringMess)
+            var ErrorMess = Object.values(JSON.parse(stringMess));
             ErrorMess.forEach(mess => toastr.error(mess));
         }
         var stringMess = $("#messSuccess").html();

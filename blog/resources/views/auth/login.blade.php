@@ -36,7 +36,7 @@
                                 <input name="email_confirmation" type="email" spellcheck="false" required class="SignUp_Input_ConfirmEmail"></input>
                                 <input name="password" type="password" spellcheck="false" required class="SignUp_Input_Password"></input>
                                 <input name="type" type="hidden" value="0"></input>
-                                <button type="button" class="Google_SignUp">Đăng ký bằng tài khoản Google</button>
+                                <a href="{{ route('login.provider', 'google') }}" class="Google_SignUp">Đăng ký bằng tài khoản Google</a>
                                 <div class="v2_980">
                                     <button type="submit" class="v2_981">Đăng Ký</button>
                                 </div>
@@ -55,7 +55,7 @@
                             @csrf
                             <input type="text" name="username" spellcheck="false" required class="SignIn_Input_Name"></input>
                             <input type="password" name="password" spellcheck="false" required class="SignIn_Input_Password"></input>
-                            <div class="Google_SignIn">Đăng nhập bằng tài khoản Google</div>
+                            <a href="{{ route('login.provider', 'google') }}" class="Google_SignIn">Đăng nhập bằng tài khoản Google</a>
                             <div class="v2_994"><button class="v2_995">Đăng Nhập</button></div>
                             <div class="v2_996"></div>
                             <span class="v2_997">Hoặc</span>
