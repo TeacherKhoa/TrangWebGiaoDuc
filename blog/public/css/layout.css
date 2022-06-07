@@ -1,0 +1,1411 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+}
+
+.Page {
+  width: 100%;
+  height: 2705px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/*Thanh Navigation fixed trên top*/
+/*#region*/
+.NavBar {
+  width: 100%;
+  height: 75px;
+  z-index: 1;
+  position: fixed;
+  overflow: hidden;
+}
+
+.NavBarBackground {
+  width: 100%;
+  height: 75px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.UserInfo {
+  width: 240px;
+  height: 75px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 1296px;
+  overflow: hidden;
+  border-left: 2px solid #c4c4c4;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.Avatar {
+  width: 50px;
+  height: 50px;
+  background: url(/images/avatar.svg?b95eaecb35b2f6c0e2c24263332e3d6f);
+  opacity: 1;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  overflow: hidden;
+}
+
+.Username {
+  width: 79px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 28px;
+  left: 80px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+
+.UserButton {
+  width: 12px;
+  height: 12px;
+  background: url(/images/UserButton.png?b429c3674ac0adbb37e2309974813d6e);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 32px;
+  left: 193px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Search {
+  width: 643px;
+  height: 43px;
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 391px;
+  overflow: hidden;
+}
+
+.SearchBar {
+  width: 600px;
+  height: 43px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 2px solid rgb(196, 196, 196);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
+}
+
+.SearchButton {
+  width: 43px;
+  height: 43px;
+  background: rgb(244, 92, 44);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+}
+
+.SearchIcon {
+  width: 20px;
+  height: 20px;
+  background: url(/images/SearchIcon.png?214494d9cc5517f1326ec1f314090671);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  overflow: hidden;
+}
+
+.ButtonKhoaHoc {
+  width: 126px;
+  height: 43px;
+  background: rgb(244, 92, 44);
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 216px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+}
+
+.ButtonKhoaHocName {
+  width: 74px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+
+.ButtonKhoaHocIcon {
+  width: 12px;
+  height: 12px;
+  background: url(/images/ButtonKhoaHoc.png?d4c1be7b31204cdd43072e20a6ef5520);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 97px;
+  overflow: hidden;
+}
+
+.ButtonPhongLab {
+  width: 126px;
+  height: 43px;
+  background: #ffd073;
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 1077px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+}
+
+.ButtonPhongLabName {
+  width: 84px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 12px;
+  left: 21px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+
+.Logo {
+  width: 136px;
+  color: rgb(244, 92, 44);
+  position: absolute;
+  top: 16px;
+  left: 40px;
+  font-family: Avenir LT Std;
+  font-weight: 750;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+
+.Notification {
+  width: 35px;
+  height: 35px;
+  background: url(/images/notification-blank.png?0557770e2ac034aad9e269dc0f971162);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 1246px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/*#endregion*/
+/*Click NavBar*/
+/*#region*/
+/*Click UserButton*/
+#User_Option {
+  width: 240px;
+  height: 174px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  left: 1296px;
+  overflow: hidden;
+  display: none;
+}
+
+.v16_40 {
+  width: 111px;
+  height: 30px;
+  background: #ffffff;
+  opacity: 1;
+  position: absolute;
+  top: 70px;
+  left: 26px;
+  overflow: hidden;
+}
+
+.v16_41 {
+  width: 57px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v16_42 {
+  width: 30px;
+  height: 30px;
+  background: url(/images/CaiDat.png?0e1d8aec7a8d7e02ae41cd3d49c40d15);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v16_43 {
+  width: 135px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 126px;
+  left: 26px;
+  overflow: hidden;
+}
+
+.v16_44 {
+  width: 81px;
+  color: rgb(254, 69, 58);
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v16_45 {
+  width: 30px;
+  height: 30px;
+  background: url(/images/Dangxuat.png?55b7998f31e1a934fd6a56be2aaeeea3);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v16_46 {
+  width: 132px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 26px;
+  overflow: hidden;
+}
+
+.v16_47 {
+  width: 78px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 5px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v16_48 {
+  width: 30px;
+  height: 30px;
+  background: url(/images/Profile.png?557587208eb9e232f2cad1ccad4fc31f);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Noti*/
+#Notification_NoiDung {
+  width: 410px;
+  height: 174px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  top: 75px;
+  left: 886px;
+  overflow: hidden;
+  display: none;
+}
+
+.v16_50 {
+  width: 410px;
+  height: 58px;
+  background: rgb(245, 247, 248);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v16_51 {
+  width: 314px;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v16_52 {
+  width: 30px;
+  height: 30px;
+  background: url(/images/checked.png?6f298cca57a5a8b36055fd638fa31481);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  overflow: hidden;
+}
+
+.v16_53 {
+  width: 409px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 58px;
+  left: 1px;
+  overflow: hidden;
+}
+
+.v16_54 {
+  width: 30px;
+  height: 30px;
+  background: url(/images/warning.png?83c8c718efce27324df717a1412a6e58);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 19px;
+  overflow: hidden;
+}
+
+.v16_55 {
+  width: 320px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 69px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v16_56 {
+  width: 410px;
+  height: 58px;
+  background: rgb(245, 247, 248);
+  opacity: 1;
+  position: absolute;
+  top: 116px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v16_57 {
+  width: 319px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v16_58 {
+  width: 30px;
+  height: 30px;
+  background: url(/images/NewCourse.png?8a3cbfc1d0ca8d45dcc10da6787eabdb);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  overflow: hidden;
+}
+
+/*#endregion*/
+/*Bảng thông báo màu hồng*/
+.WelcomeNoti {
+  width: 100%;
+  height: 200px;
+  background: rgba(244, 91, 43, 0.349999994);
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.ThongBao {
+  width: 450px;
+  color: rgb(213, 67, 20);
+  position: absolute;
+  top: 117px;
+  left: 216px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+/*Thanh trạng thái chọn khóa học*/
+.StatusBar {
+  width: 100%;
+  height: 63px;
+  background: #ffffff;
+  position: absolute;
+  top: 275px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.Status1 {
+  width: 200px;
+  height: 63px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  line-height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 222px;
+  overflow: hidden;
+}
+
+.Status2 {
+  width: 200px;
+  height: 63px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  line-height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 492px;
+  overflow: hidden;
+}
+
+.Status3 {
+  width: 200px;
+  height: 63px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+  line-height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 762px;
+  overflow: hidden;
+}
+
+/*Chọn status nào thì Indicator nằm ở status đó*/
+.StatusIndicator {
+  width: 200px;
+  height: 6px;
+  background: rgb(244, 92, 44);
+  opacity: 1;
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Nội Dung Chính*/
+.Content {
+  width: 100%;
+  height: 2367px;
+  background: rgb(245, 247, 248);
+  opacity: 1;
+  position: absolute;
+  top: 338px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Bài Học Nổi Bật, Chỉ hiện 1 trong tất cả khóa học*/
+.BaiHoc {
+  width: 1115px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 117px;
+  left: 211px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.1000000015);
+}
+
+.BaiHocInfo {
+  width: 725px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  overflow: hidden;
+}
+
+.ProgressBar {
+  width: 550px;
+  height: 49px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 101px;
+  left: 175px;
+  overflow: hidden;
+}
+
+.ProgressText {
+  width: 133px;
+  color: rgb(151, 151, 151);
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Percentage {
+  width: 36px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 514px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.ProgressHolder {
+  width: 500px;
+  height: 10px;
+  background: rgb(229, 229, 229);
+  opacity: 1;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+.Progress {
+  width: 200px;
+  height: 10px;
+  background: rgb(90, 156, 125);
+  opacity: 1;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+.CourseName {
+  width: 434px;
+  color: rgb(244, 92, 44);
+  position: absolute;
+  top: 30px;
+  left: 175px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.CourseAuthor {
+  width: 298px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 175px;
+  overflow: hidden;
+}
+
+.CourseType {
+  width: 59px;
+  color: rgb(151, 151, 151);
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+
+.CourseTeacher {
+  width: 223px;
+  color: rgb(151, 151, 151);
+  position: absolute;
+  top: 1px;
+  left: 75px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Stripe {
+  height: 20px;
+  width: 2px;
+  background: #979797;
+  position: absolute;
+  top: 1px;
+  left: 67px;
+}
+
+.CoursePhoto {
+  width: 150px;
+  height: 150px;
+  background: url(/images/CoursePhoto.png?3c6a60aeb5549413de6850c6836147ef);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+}
+
+.CourseStripe {
+  height: 150px;
+  width: 3px;
+  background: #e5e5e5;
+  position: absolute;
+  top: 25px;
+  left: 772px;
+}
+
+.CourseNext {
+  width: 294px;
+  height: 95px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 26px;
+  left: 792px;
+  overflow: hidden;
+}
+
+.NextText {
+  width: 70px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.NextTitle {
+  width: 254px;
+  color: rgb(244, 92, 44);
+  position: absolute;
+  top: 39px;
+  left: 40px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.LectureIcon {
+  width: 30px;
+  height: 30px;
+  background: url(/images/LectureIcon.png?8cf57fa42bac68c5b264ae6533c8cb2a);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.NextItemInfo {
+  width: 235px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 40px;
+  overflow: hidden;
+}
+
+.NextLocation {
+  width: 52px;
+  color: rgb(151, 151, 151);
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.ItemTime {
+  width: 143px;
+  color: rgb(151, 151, 151);
+  position: absolute;
+  top: 1px;
+  left: 75px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Suggest1_Title {
+  width: 528px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 389px;
+  left: 224px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Suggest2_Title {
+  width: 600px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 1021px;
+  left: 224px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Suggest3_Title {
+  width: 600px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 1653px;
+  left: 224px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+/*Các Khóa Học Đề Xuất*/
+.Item1 {
+  width: 337px;
+  height: 456px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 493px;
+  left: 211px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.1000000015);
+  overflow: hidden;
+}
+
+.Item1_Photo {
+  width: 337px;
+  height: 177px;
+  background: url(/images/Photo1.png?4654fe8d9c86a06a17ef91542ad12a50);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.Item_Header {
+  width: 304px;
+  height: 32px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 197px;
+  left: 26px;
+  overflow: hidden;
+}
+
+.Item_Type_BaiHoc {
+  width: 65px;
+  height: 24px;
+  background: #f45c2c;
+  opacity: 1;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border-radius: 3px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.Item_Label_Best {
+  width: 93px;
+  height: 24px;
+  position: absolute;
+  top: 5px;
+  left: 77px;
+  background: url(/images/LabelBackground.png?c988eaa18ba7a9a2bb1cc8781d74b700);
+  background-size: 100%;
+  background-position: center center;
+  overflow: hidden;
+  color: #0D1333;
+  font-family: Avenir LT Std;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 7px;
+  line-height: 24px;
+}
+
+.Item_Review {
+  width: 103px;
+  height: 19px;
+  position: absolute;
+  top: 7px;
+  left: 190px;
+  overflow: hidden;
+}
+
+.Item_Participant {
+  width: 48px;
+  height: 19px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  color: #61688B;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+  line-height: 19px;
+}
+
+.Item_Participant_Icon {
+  width: 15px;
+  height: 15px;
+  background: url(/images/Person.png?7f6cc0a72c6e0bfa00625195aaf7d14d);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.Item_Star {
+  width: 44px;
+  height: 19px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 59px;
+  overflow: hidden;
+  color: #61688B;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+  line-height: 19px;
+}
+
+.Item_Star_Icon {
+  width: 14px;
+  height: 14px;
+  background: url(/images/star.png?c60aa7c49ea6984e891735384dbda7b8);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.Item_Button {
+  width: 130px;
+  height: 34px;
+  background: rgb(244, 92, 44);
+  opacity: 1;
+  position: absolute;
+  top: 391px;
+  left: 189px;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #ffffff;
+  padding-left: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: left;
+}
+
+.Item_Button_Icon {
+  width: 20px;
+  height: 20px;
+  background: url(/images/right-arrow.png?8ca5367d65d292a5bdd8fe3aa919ac74);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  left: 103px;
+  overflow: hidden;
+}
+
+.Item_Info {
+  width: 250px;
+  height: 171px;
+  position: absolute;
+  top: 254px;
+  left: 25px;
+  overflow: hidden;
+}
+
+.Item_Name {
+  width: 250px;
+  color: rgb(244, 92, 44);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Item_Price {
+  width: 87px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Item_Author {
+  width: 240px;
+  height: 37px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 86px;
+  left: 1px;
+  overflow: hidden;
+}
+
+.Photo_Holder {
+  width: 37px;
+  height: 37px;
+  background: rgb(196, 196, 196);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  border: 2px solid #f45c2c;
+}
+
+.Author_Name {
+  width: 193px;
+  color: rgb(244, 92, 44);
+  position: absolute;
+  top: 9px;
+  left: 47px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Item1_AuthorPhoto {
+  width: 35px;
+  height: 35px;
+  background: url(/images/Author.jpg?efe37a2d88404ff4803f8ae619fc3afc);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Item_Summary {
+  width: 145px;
+  height: 30px;
+  position: absolute;
+  top: 141px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.Item_SummaryAmount {
+  width: 108px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 5px;
+  left: 37px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.Item_Summary_BaiHoc {
+  width: 30px;
+  height: 30px;
+  background: url(/images/book.png?f24f8791e8d00192febf3e60e4b489aa);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Item số 2*/
+.Item2 {
+  width: 337px;
+  height: 456px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 493px;
+  left: 600px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.1000000015);
+  overflow: hidden;
+}
+
+.Item2_Photo {
+  width: 337px;
+  height: 177px;
+  background: url(/images/Photo2.png?3336fbe0d79b3e277442d45806afbd5b);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.Item2_AuthorPhoto {
+  width: 35px;
+  height: 35px;
+  background: url(/images/Author.jpg?efe37a2d88404ff4803f8ae619fc3afc);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/*Item số 3*/
+.Item3 {
+  width: 337px;
+  height: 456px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 493px;
+  left: 989px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.1000000015);
+  overflow: hidden;
+}
+
+.Item3_Photo {
+  width: 337px;
+  height: 177px;
+  background: url(/images/Photo3.png?067fb56362d56dbfb2b39efb28dcd9cd);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.Item_Type_LuyenTap {
+  width: 82px;
+  height: 24px;
+  background: #ffd073;
+  opacity: 1;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border-radius: 3px;
+  overflow: hidden;
+  color: #000;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.Item_Label_Starter {
+  width: 73px;
+  height: 24px;
+  position: absolute;
+  top: 5px;
+  left: 97px;
+  background: url(/images/LabelBackground_Grey.png?61a15169eac56b3fadd058289942fa11);
+  background-size: 100%;
+  background-position: center center;
+  overflow: hidden;
+  color: #0D1333;
+  font-family: Avenir LT Std;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 7px;
+  line-height: 24px;
+}
+
+.Item3_AuthorPhoto {
+  width: 35px;
+  height: 35px;
+  background: url(/images/Author.jpg?efe37a2d88404ff4803f8ae619fc3afc);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Item_Summary_LuyenTap {
+  width: 30px;
+  height: 30px;
+  background: url(/images/Tools.png?6ab2928ac1b9d9ca50cfcc159dd1731d);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/*Banner Lớn Phòng Lab*/
+.Lab_Banner {
+  width: 1115px;
+  height: 331px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 1775px;
+  left: 211px;
+  border-radius: 12px;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.1000000015);
+  overflow: hidden;
+}
+
+.Lab_Banner_Button {
+  width: 287px;
+  height: 76px;
+  background: rgb(245, 108, 25);
+  opacity: 1;
+  position: absolute;
+  top: 128px;
+  left: 606px;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  line-height: 76px;
+}
+
+.Lab_Banner_Photo {
+  width: 350px;
+  height: 300px;
+  background: url(/images/LabVector.png?786b2fbb7914de5507fc2ebf6927ee0f);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  left: 178px;
+  overflow: hidden;
+}

@@ -24,8 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        dd('Home ne');
-        redirect()->route('update_user');
-        return view('home');
+        return view('dashboard');
     }
 }
